@@ -70,4 +70,11 @@ a:hover {
 footer {
     grid-area: footer;
     background-color: #08415C;
+    color: white;
+    font-family: "Rubik";
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
 }
