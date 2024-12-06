@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+}
+
+.body {
+    display: grid;
+    margin: 0 auto;
+    background-color: white;
+    min-height: 160vh;
+    grid-template-columns: auto;
+    grid-template-rows: 150px 60px auto 140px;
+    grid-template-areas:
+        "header"
+        "nav"
+        "main"
+        "footer"
+    ;
+}
+
+header {
+    font-family: "Rubik";
+    grid-area: header;
+    background-color: #1A936F;
+    display: flex;
+    justify-content: space-between;
+}
+
+.parallelogram {
+	width: 200px;
+	height: 150px;
+	transform: skew(-20deg);
+	background: #88D498;
+}
+
+.titel {
+    margin-top: 3%;
+    margin-left: 25%;
+    font-size: 60px;
+}
+
+.header_logo {
+    justify-content: end;
+}
+nav {
+    background-color: #FFA62B;
+    font-family: "Rubik";
+}
+
+.Navindex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    margin-top: 1.5%;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+a:after {
+    color: black;
+    font-family: "Rubik";
+    text-decoration: none;
+}
+a:hover {
+    color: #1A936F;
+}
+
+main {
+    
+}
+
+footer {
+    grid-area: footer;
+    background-color: #08415C;
+}
