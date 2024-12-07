@@ -8,22 +8,14 @@ body {
     background-color: white;
     min-height: 160vh;
     grid-template-columns: auto;
-    grid-template-rows: 150px 60px auto 140px;
+    grid-template-rows: 150px auto 140px;
     grid-template-areas:
-        "header"
         "nav"
         "main"
         "footer"
     ;
 }
 
-header {
-    font-family: "Rubik";
-    grid-area: header;
-    background-color: #1A936F;
-    display: flex;
-    justify-content: space-between;
-}
 
 .parallelogram {
 	width: 200px;
@@ -42,7 +34,7 @@ header {
     justify-content: end;
 }
 nav {
-    background-color: #FFA62B;
+    background-color: #88D498;
     font-family: "Rubik";
 }
 
@@ -65,6 +57,10 @@ a:after {
 }
 a:hover {
     color: #1A936F;
+}
+
+main {
+    background-color: #FFA62B;
 }
 
 footer {
