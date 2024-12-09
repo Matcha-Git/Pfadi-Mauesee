@@ -42,6 +42,7 @@ header {
     justify-content: end;
 }
 nav {
+    grid-area: nav;
     background-color: #FFA62B;
     font-family: "Rubik";
 }

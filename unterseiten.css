@@ -16,24 +16,8 @@ body {
     ;
 }
 
-
-.parallelogram {
-	width: 200px;
-	height: 150px;
-	transform: skew(-20deg);
-	background: #88D498;
-}
-
-.titel {
-    margin-top: 3%;
-    margin-left: 25%;
-    font-size: 60px;
-}
-
-.header_logo {
-    justify-content: end;
-}
 nav {
+    grid-area: nav;
     background-color: #88D498;
     font-family: "Rubik";
 }
@@ -60,6 +44,7 @@ a:hover {
 }
 
 main {
+    grid-area: main;
     background-color: #FFA62B;
 }
 
