@@ -1,1 +1,1 @@
-<h1 align="Centre">Pfadi Mauensee</h1>
+<h1 align="center">Pfadi Mauensee</h1>
