@@ -7,26 +7,39 @@ body {
     margin: 0 auto;
     background-color: white;
     min-height: 160vh;
-    grid-template-columns: auto;
+    grid-template-columns: 300px auto;
     grid-template-rows: 150px auto 140px;
     grid-template-areas:
-        "nav"
-        "main"
-        "footer"
+        "header nav"
+        "main   main"
+        "footer footer"
     ;
+}
+
+header {
+    grid-area: header;
+    background-color: #88D498;
+    font-family: "Rubik";  
+}
+
+.header_logo {
+    justify-content: start;
 }
 
 nav {
     grid-area: nav;
     background-color: #88D498;
     font-family: "Rubik";
-    display: flex;
-    justify-content: space-between;
 }
 
-.header_logo {
-    justify-content: start;
+
+
+.Navindex {
+    display: flex;
+    justify-content: space-around;
 }
+
+
 
 a {
     margin-top: 8vh;
