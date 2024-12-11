@@ -1,3 +1,7 @@
+.header_logo {
+    border-radius: 0px;
+}
+
 .biber {
     margin-top: 5vh;
     display: flex;
@@ -14,10 +18,18 @@
     justify-content: space-evenly;
 }
 
+.wölfli_txt {
+    font-size: large;
+}
+
 .pfader {
     margin-top: 5vh;
     display: flex;
     justify-content: space-evenly;
+}
+
+.pfader_txt {
+    font-size: large;
 }
 
 .pio {
@@ -32,7 +44,7 @@
     justify-content: space-evenly;
 }
 
-.biber_img {
+img {
     border-radius: 15px;
 }
 
