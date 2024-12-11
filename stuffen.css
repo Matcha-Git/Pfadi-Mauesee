@@ -1,0 +1,41 @@
+.biber {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.biber_txt {
+    font-size: large;
+}
+
+.wölfli {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pfader {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pio {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.leiter {
+    margin-top: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.biber_img {
+    border-radius: 15px;
+}
+
+h2 {
+    margin-top: 5vh;
+}
