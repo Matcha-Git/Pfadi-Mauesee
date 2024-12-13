@@ -6,6 +6,9 @@ form {
 }
 
 input {
-    height: 150%;
-    
+    height: 3vh;
+}
+
+button {
+    height: 3vh;
 }

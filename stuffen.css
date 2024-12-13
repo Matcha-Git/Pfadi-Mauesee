@@ -48,6 +48,14 @@
     justify-content: space-evenly;
 }
 
+.leiter_txt {
+    font-size: large;
+}
+
+.leitungs_bild {
+    margin-bottom: 3vh;
+}
+
 img {
     border-radius: 25px;
 }
