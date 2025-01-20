@@ -15,6 +15,26 @@ h1 {
 .utitel {
     display: flex;
     justify-content: space-around;
+    font-size: 3.5vh;
+    font-weight: 600;
     padding-top: 0px;
     margin-top: 0px;
+}
+
+h3 {
+    display: flex;
+    justify-content: space-around;
+    font-size: 6vh;
+    font-weight: 800;
+    padding-bottom: 0vh;
+    margin-bottom: 0px;
+}
+
+p {
+    display: flex;
+    justify-content: space-around;
+    font-size: 3vh;
+    font-weight: 600;
+    padding-bottom: 0vh;
+    margin-bottom: 0px;
 }
