@@ -1,3 +1,23 @@
+
+.top1 {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 0;
+}
+
+.top1txt {
+    margin-bottom: 0;
+} 
+
+.top2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.flex_form {
+    display: flex;
+}
+
 form {
     color: white;
     font-family: "Rubik";

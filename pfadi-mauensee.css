@@ -23,6 +23,11 @@
     margin-top: 0px;
 }
 
+#1txt {
+    display: flex;
+    justify-content: space-around;
+}
+
 .h3txt {
     display: flex;
     justify-content: space-around;
@@ -48,4 +53,8 @@
 
 img {
     border-radius: 25px;
+}
+
+.header_logo {
+    border-radius: 0;
 }

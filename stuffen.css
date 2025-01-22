@@ -2,14 +2,12 @@
     border-radius: 0px;
 }
 
-.top1 {
-    display: flex;
-    justify-content: space-around;
-}
 
-.top2 {
+.stufen_title {
     display: flex;
     justify-content: space-around;
+    font-size: 3.5vh;
+    font-weight: 700;
 }
 
 .biber {
