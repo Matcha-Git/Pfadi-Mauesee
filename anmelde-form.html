@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="unterseiten.css" rel="stylesheet">
     <link href="anmelde-form.css" rel="stylesheet">
-    <link herf="bilder">
+    <link href="bilder" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
 <body>
     <div class="body">
         <header>
-          <img class="header_logo" src="bilder/header_logo_unterseiten.png" alt="Logo Pfadi Mauensee">        
+            <img class="header_logo" src="bilder/header_logo_unterseiten.png" alt="Logo Pfadi Mauensee">        
         </header>
         <nav>
             <div class="Navindex">
@@ -26,24 +26,24 @@
         </nav>
         <main>
           <div class="top1">
-            <h1 class="top1txt">Hast du auch lust auf Pfadi?</h1>
+            <h1 class="top1txt">Hast du auch Lust auf Pfadi?</h1>
           </div>
           <div class="top2">
             <h3 class="top2txt">Hier kannst du dich für einen Schnuppertag anmelden</h3>
           </div>
           <div class="flex_form">
-            <form action="index.php" method="post">
+            <form id="form1">
               <div>
-                  <lable for="textfeld1">Vor-/Nachname des Kindes:</lable><br>
+                  <label for="textfeld1">Vor-/Nachname des Kindes:</label><br>
                   <input type="text" placeholder="Pflichtfeld" required id="textfeld1" name="Vor-/Nachname">
               </div>
               <div>
-                <lable for="textfeld2">Alter des Kindes:</lable><br>
+                <label for="textfeld2">Alter des Kindes:</label><br>
                 <input type="text" placeholder="Pflichtfeld" required id="textfeld2" name="Alter">
               </div>
               <div>
-                <lable for="select1">Schnupper Stufe:</lable><br>
-                <select name="select1">
+                <label for="select1">Schnupper Stufe:</label><br>
+                <select name="select1" id="select1">
                   <option value="-">Wähle eine Stufe</option>
                   <option value="Biberstufe">Biberstufe</option>
                   <option value="Wölflistufe">Wölflistufe</option>
@@ -52,21 +52,56 @@
                 </select>
               </div>
               <div>
-                  <lable for="phone">Telefonnummer:</lable><br>
+                  <label for="phone">Telefonnummer:</label><br>
                   <input type="tel" placeholder="Pflichtfeld" required id="phone" name="phone">
               </div>
               <div>
-                <lable for="textfeld3">Halter der Telefonnummer:</lable><br>
+                <label for="textfeld3">Halter der Telefonnummer:</label><br>
                 <input type="text" placeholder="Pflichtfeld" required id="textfeld3" name="Inhabertel">
               </div>
               <div>
-                  <lable for="textarea1">Mitteilung:</lable><br>
-                  <textarea name="Mitteilung" required id="textarea1" cols="40" rows="5" placeholder="Hat Ihr Kind Alergien, Gesundheitliche beschwerden oder ähnliches? Geben Sie diese bitte hier an."></textarea>
+                  <label for="textarea1">Mitteilung:</label><br>
+                  <textarea name="Mitteilung" required id="textarea1" cols="40" rows="5" placeholder="Hat Ihr Kind Alergien, Gesundheitliche Beschwerden oder ähnliches? Geben Sie diese bitte hier an."></textarea>
               </div>
               <div>
                   <button type="submit">Abschicken</button>
               </div>
             </form>
+            <script>
+              emailjs.init("WUBRlXioiV8YaN7x9"); // Ersetze mit deiner User ID von EmailJS
+
+              document.getElementById('form1').addEventListener('submit', function(event) {
+                  event.preventDefault();  // Verhindert das Standardverhalten des Formulars (Absenden)
+
+                  // Formulardaten sammeln
+                  const vorname = document.getElementById('textfeld1').value;
+                  const alter = document.getElementById('textfeld2').value;
+                  const stufe = document.getElementById('select1').value;
+                  const telefon = document.getElementById('phone').value;
+                  const inhaber = document.getElementById('textfeld3').value;
+                  const mitteilung = document.getElementById('textarea1').value;
+
+                  // Erstelle die Formulardaten für das EmailJS Template
+                  const templateParams = {
+                      vorname: vorname,
+                      alter: alter,
+                      stufe: stufe,
+                      telefon: telefon,
+                      inhaber: inhaber,
+                      mitteilung: mitteilung
+                  };
+
+                  // Sende das Formular über EmailJS
+                  emailjs.send('service_hh8dcve', 'template_4034p39', templateParams)
+                      .then(function(response) {
+                          alert("Die Anmeldung wurde erfolgreich gesendet!");
+                          console.log('Erfolgreich gesendet', response);
+                      }, function(error) {
+                          alert("Es gab ein Problem beim Senden der E-Mail.");
+                          console.error('Fehler beim Senden', error);
+                      });
+              });
+            </script>
           </div>
           <div class="top1">
             <h1 class="top1txt2">Danke für deine Anmeldung :)</h1>
