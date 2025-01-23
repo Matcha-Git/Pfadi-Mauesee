@@ -34,16 +34,34 @@
           <div class="flex_form">
             <form action="https://formlog.offline.ch/log" method="post">
               <div>
-                  <lable for="textfeld1">Vor-/Nachname:</lable><br>
+                  <lable for="textfeld1">Vor-/Nachname des Kindes:</lable><br>
                   <input type="text" placeholder="Pflichtfeld" required id="textfeld1" name="Vor-/Nachname">
               </div>
               <div>
-                  <lable for="email1">E-Mail:</lable><br>
-                  <input type="email" placeholder="Pflichtfeld" required id="email1" name="E-Mail">
+                <lable for="textfeld2">Alter des Kindes:</lable><br>
+                <input type="text" placeholder="Pflichtfeld" required id="textfeld2" name="Alter">
+              </div>
+              <div>
+                <lable for="select1">Schnuppe Stufe:</lable><br>
+                <select name="select1">
+                  <option value="-">Wähle eine Stufe</option>
+                  <option value="Biberstufe">Biberstufe</option>
+                  <option value="Wölflistufe">Wölflistufe</option>
+                  <option value="Pfaderstufe">Pfaderstufe</option>
+                  <option value="Piostufe">Piostufe</option>
+                </select>
+              </div>
+              <div>
+                  <lable for="phone">Telefonnummer:</lable><br>
+                  <input type="tel" placeholder="Pflichtfeld" required id="phone" name="phone">
+              </div>
+              <div>
+                <lable for="textfeld3">Halter der Telefonnummer:</lable><br>
+                <input type="text" placeholder="Pflichtfeld" required id="textfeld3" name="Inhabertel">
               </div>
               <div>
                   <lable for="textarea1">Mitteilung:</lable><br>
-                  <textarea name="Mitteilung" required id="textarea1" cols="40" rows="5" placeholder="Geben sie kurz an für was sie die Webseite benötigen oder eine kurze beschreibung Ihrer Firma."></textarea>
+                  <textarea name="Mitteilung" required id="textarea1" cols="40" rows="5" placeholder="Hat Ihr Kind Alergien, Gesundheitliche beschwerden oder ähnliches? Geben Sie diese bitte hier an."></textarea>
               </div>
               <div>
                   <button type="submit">Abschicken</button>

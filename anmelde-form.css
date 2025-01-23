@@ -1,8 +1,12 @@
 
 .top1 {
+    margin-bottom: 0;
     display: flex;
     justify-content: space-around;
-    margin-bottom: 0;
+    font-size: 4vh;
+    font-weight: 800;
+    padding-bottom: 0vh;
+    margin-bottom: 0px;
 }
 
 .top1txt {
@@ -12,6 +16,10 @@
 .top2 {
     display: flex;
     justify-content: space-around;
+    font-size: 3.5vh;
+    font-weight: 800;
+    padding-bottom: 0vh;
+    margin-bottom: 0px;
 }
 
 .flex_form {
@@ -27,8 +35,25 @@ form {
 
 input {
     height: 3vh;
+    width: 38.5vh;
+    border-radius: 0.9vh;
+    border-style: hidden;
 }
 
 button {
     height: 3vh;
+    border-radius: 0.9vh;
+    border-style: hidden;
+}
+
+textarea {
+    border-radius: 0.9vh;
+    border-style: hidden;
+}
+
+select {
+    height: 3vh;
+    width: 38.5vh;
+    border-radius: 0.9vh;
+    border-style: hidden;
 }
