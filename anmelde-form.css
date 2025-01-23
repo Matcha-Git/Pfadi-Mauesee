@@ -22,6 +22,10 @@
     margin-bottom: 0px;
 }
 
+.top2txt {
+    margin-top: 12.5px;
+}
+
 .flex_form {
     display: flex;
 }
@@ -44,11 +48,13 @@ button {
     height: 3vh;
     border-radius: 0.9vh;
     border-style: hidden;
+    background-color: rgba(119, 214, 132, 0.932);
 }
 
 textarea {
     border-radius: 0.9vh;
     border-style: hidden;
+    width: 38.5vh;
 }
 
 select {
@@ -56,4 +62,8 @@ select {
     width: 38.5vh;
     border-radius: 0.9vh;
     border-style: hidden;
+}
+
+.top1txt2 {
+    margin-top: 18vh;
 }
